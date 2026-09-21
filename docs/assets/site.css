@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap");
+
+[data-md-color-scheme="lds"] {
+  --md-primary-fg-color: #24433a;
+  --md-primary-fg-color--light: #35594d;
+  --md-primary-fg-color--dark: #1a322b;
+  --md-primary-bg-color: #f6f2e8;
+  --md-accent-fg-color: #b8923f;
+  --md-default-bg-color: #f6f2e8;
+  --md-default-fg-color: #1f2f2a;
+  --md-default-fg-color--light: #4a5a54;
+  --md-typeset-a-color: #2f6650;
+  --md-footer-bg-color: #1a322b;
+  --md-footer-bg-color--dark: #142721;
+  --md-code-bg-color: #ece6d6;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  color: #1f2f2a;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 {
+  border-bottom: 2px solid #b8923f;
+  padding-bottom: 0.35em;
+}
+
+.md-typeset table:not([class]) {
+  background: #fffdf8;
+  border: 1px solid #e2dac6;
+  border-radius: 10px;
+  font-size: 0.74rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: #24433a;
+  color: #f6f2e8;
+  font-weight: 600;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  background: #fffdf8;
+}
+
+.md-typeset ol li,
+.md-typeset ul li {
+  margin-bottom: 0.35em;
+}
+
+/* Top-level sections as bold tabs */
+.md-tabs {
+  background: #1a322b;
+  border-bottom: 3px solid #b8923f;
+}
+
+.md-tabs__link {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.84rem;
+  opacity: 0.75;
+  margin-top: 0.7rem;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link:hover {
+  opacity: 1;
+  color: #e6c878;
+}
+
+/* Section title at the top of the side menu */
+.md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link,
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f2f2a;
+  border-left: 4px solid #b8923f;
+  padding-left: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Home page section cards */
+.md-typeset .grid.cards > ul > li {
+  background: #fffdf8;
+  border: 1px solid #e2dac6;
+  border-top: 5px solid #24433a;
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: #b8923f;
+  border-top-color: #b8923f;
+}
+
+.md-typeset .grid.cards > ul > li > p:first-child strong {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  color: #1f2f2a;
+}
+
