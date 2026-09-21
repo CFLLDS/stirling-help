@@ -1,0 +1,80 @@
+site_name: Stirling Help Centre
+site_description: How to read Stirling, the one-page view of your services, phones, buildings and money.
+copyright: "&copy; LDS Consulting Limited trading as LDS Consultancy"
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  palette:
+    scheme: lds
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  icon:
+    logo: material/chart-box-outline
+
+extra_css:
+  - assets/site.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - Find your way around: getting-started/find-your-way-around.md
+      - Choose the reporting period: getting-started/reporting-period.md
+      - Measured, estimated or written: getting-started/measured-estimated-written.md
+      - How people's privacy is protected: getting-started/privacy.md
+  - Brief:
+      - brief/index.md
+      - Use the Brief in a meeting: brief/use-it-in-a-meeting.md
+  - Operations:
+      - operations/index.md
+      - Issues and welfare alerts: operations/issues.md
+      - Record-keeping breaches: operations/sla-breaches.md
+      - Home support visits: operations/home-support.md
+      - Read a heat grid: operations/heat-grids.md
+      - Footcare and handyperson: operations/footcare-and-handyperson.md
+  - Telephony:
+      - telephony/index.md
+      - The advice line: telephony/advice-line.md
+      - The assistant: telephony/the-assistant.md
+      - Work the call-back list: telephony/call-backs.md
+      - What the assistant costs: telephony/assistant-costs.md
+  - Buildings:
+      - buildings/index.md
+      - Electricity: buildings/electricity.md
+      - Temperature and humidity: buildings/zones.md
+      - Network: buildings/network.md
+  - Finance:
+      - finance/index.md
+      - Electricity cost: finance/electricity-cost.md
+      - Capacity not being sold: finance/capacity.md
+      - Card takings: finance/card-takings.md
+      - Service income and margin: finance/service-income.md
+      - What the assistant saved: finance/assistant-savings.md
+      - The briefing: finance/the-briefing.md
+  - Quick answers: quick-answers.md
